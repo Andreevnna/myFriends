@@ -1,0 +1,27 @@
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-weight: 400;
+  color: #000000;
+  background-color: #8a8a8a;
+  margin: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
