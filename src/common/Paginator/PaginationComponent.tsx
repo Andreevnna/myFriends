@@ -1,4 +1,11 @@
-const PaginationComponent = (props) => {
+import React, {FC} from 'react'
+type PropsType = {
+  totalUsersCount: number
+  pageSize: number
+  currentPage: number
+  onPageChanged: (page: number) => void
+}
+const PaginationComponent: FC<PropsType> = (props) => {
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize)
   let pages = []
   for (let index = 1; index <= pagesCount; index++) {

@@ -10,8 +10,15 @@ const SET_TOTAL_USERS_COUNT = 'SET-TOTAL-USERS-COUNT'
 const TOGGLE_IS_FETCHING = 'TOGGLE-IS-FETCHING'
 const TOGGLE_FOLLOWING_IS_FETCHING = 'TOGGLE-FOLLOWING-IS-FETCHING'
 
+type usersType = {
+  count: number
+  page: number
+  term: string
+  friend: boolean
+}
+
 let initializationState = {
-  users: [],
+  users: [] as Array<usersType>,
   pageSize: 5,
   totalUsersCount: 0,
   currentPage: 1,
@@ -22,6 +29,7 @@ let initializationState = {
   }
 }
 type initializationStateType = typeof initializationState
+
 let friendsReducer = (state = initializationState, action: any): initializationStateType  => {
   switch (action.type) {
     case FOLLOW:
@@ -90,9 +98,9 @@ export const unFollow = (userId: number): unFollowActionCreatorType => {
 }
 type setUsersActionCreatorType = {
   type: typeof SET_USERS,
-  users: any
+  users: usersType
 }
-export const setUsers = (users: any):setUsersActionCreatorType => {
+export const setUsers = (users: usersType): setUsersActionCreatorType => {
   return {
     type: SET_USERS,
     users: users
@@ -118,13 +126,22 @@ export const setTotalUsersCount = (totalUsersCount: number): setTotalUsersCountA
     totalUsersCount: totalUsersCount
   }
 }
-export const setToggleIsFetching = (isFetching: boolean) => {
+type setToggleIsFetchingActionType = {
+  type: typeof TOGGLE_IS_FETCHING,
+  isFetching: boolean
+}
+export const setToggleIsFetching = (isFetching: boolean): setToggleIsFetchingActionType => {
   return {
     type: TOGGLE_IS_FETCHING,
     isFetching: isFetching
   }
 }
-export const setToggleFollowingIsFetching = (isFetching: boolean, userId: null) => {
+type setToggleFollowingIsFetchingActionType = {
+  type: typeof TOGGLE_FOLLOWING_IS_FETCHING,
+  isFetching: boolean
+  userId: number | null
+}
+export const setToggleFollowingIsFetching = (isFetching: boolean, userId: number | null): setToggleFollowingIsFetchingActionType => {
   return {
     type: TOGGLE_FOLLOWING_IS_FETCHING,
     isFetching,
@@ -139,7 +156,7 @@ export const getUsers = (current: number | undefined, pageSize: number | undefin
   dispatch(setTotalUsersCount(data.totalCount))
 
 }
-const followUnFollowFlow = async (dispatch: any, userId: any, apiMethod: { (userId: any): Promise<any>; (userId: any): Promise<any>; (arg0: any): any; }, actionCreator: { (userId: any): { type: string; userId: any; }; (userId: any): { type: string; userId: any; }; (arg0: any): any; }) => {
+const followUnFollowFlow = async (dispatch: any, userId: number, apiMethod: { (userId: any): Promise<any>; (userId: any): Promise<any>; (arg0: any): any; }, actionCreator: { (userId: any): { type: string; userId: any; }; (userId: any): { type: string; userId: any; }; (arg0: any): any; }) => {
   dispatch(setToggleFollowingIsFetching(true, userId))
   const data = await apiMethod(userId)
   if (data.resultCode === 0) {

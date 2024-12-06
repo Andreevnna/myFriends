@@ -19,7 +19,12 @@ export function withRouter(Children) {
     return <Children {...props} match={match} />
   }
 }
-
+// type PropsType = {
+  
+// }
+// type StateType = {
+  // <PropsType, StateType>
+// }
 class ContainerProfile extends React.Component {
 
   componentDidMount() {
