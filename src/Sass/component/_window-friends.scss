@@ -1,0 +1,41 @@
+.friend-count {
+  padding: 5px 10px;
+}
+
+.friends__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__card {
+  button:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+.friends__cards {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  text-align: center;
+  max-width: 160px;
+  padding: 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.09);
+  
+  p {
+    font-size: 1.3rem;
+  }
+  img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50px;
+  }
+}
+.button__card {
+  padding-top: 10px;
+}

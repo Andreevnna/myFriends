@@ -1,0 +1,21 @@
+.window-about {
+  width: 376px;
+  height: 240px;
+  h2 {
+    padding: 0 0 10px 0;
+  }
+  p {
+    padding: 0 0 10px 0;
+  }
+
+}
+.about__information {
+  li {
+    padding: 6px 0;
+    font-size: 1.5rem;
+    color: $color-second-dark;
+    span {
+      opacity: 0.6;
+    }
+  }
+}

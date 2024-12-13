@@ -1,0 +1,41 @@
+.btn {
+  border-radius: 5px;
+  padding: 10px 13px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: $color-light;
+  background-color: $color-link;
+
+  &:hover {
+    background-color: #0d5ec9;
+  }
+}
+
+.btn-info {
+  background-color: #0f6fec1a;
+  color: $color-link;
+  &:hover {
+    background-color: $color-link;
+    color: $color-light;
+  }
+
+}
+
+.btn-secondary {
+  background-color: $color-icon-background;
+}
+
+.btn-success {
+  background-color: $color-edit;
+
+  &:hover {
+    background-color: #b62335;
+  }
+}
+
+.btn-friends {
+  font-size: 1.3rem;
+  padding: 9px 15px;
+}

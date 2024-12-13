@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import userImg from '../../../assets/img/user.png'
+import userImg from '../../../Assets/img/logo.jpg'
 const User = ({user, followingInProgress, setUnFollow, setFollow}) => {
   return <>
   <div>

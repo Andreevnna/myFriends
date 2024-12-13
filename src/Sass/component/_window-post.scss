@@ -1,0 +1,22 @@
+.posts__logo {
+  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+  }
+}
+.post-link {
+  ul {
+    display: flex;
+    li {
+      padding: 6px 10px;
+      background-color: $color-icon-background;
+      border-radius: 5px;
+      a {
+        font-size: 1.3rem;
+        color: $color-second-dark;
+        display: block;
+      }
+    }
+  }
+}

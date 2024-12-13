@@ -1,0 +1,10 @@
+.layout-1-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.layout-2-columns {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 35px;
+}

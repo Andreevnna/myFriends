@@ -12,7 +12,7 @@ let Profile = (props) => {
     return (
       <>
         <section className="profile">
-          <div className="wrapper">
+          <div className="wrapper container">
             <h1>Profile</h1>
             <ul>
               <img src={props.userProfile.photos.large} alt="" />

@@ -1,16 +1,25 @@
 .header {
-  background-color: black;
-  padding: 30px 0;
+  background-color: $color-background-window;
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
-ul {
-  li {
-    list-style: none;
-    padding: none;
-  }
+.header__logo-img {
+  margin-left: 10px;
+  cursor: pointer;
 }
-.login-user {
-  color: #fff;
-  font-size: 1.3em;
+.header-elements {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+  }
 }

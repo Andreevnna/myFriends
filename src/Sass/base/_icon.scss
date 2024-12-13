@@ -1,0 +1,80 @@
+.icon {
+  display: inline-block;
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+.icon-sign-out {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/log-out.svg);
+}
+.icon-messages {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/message-square.svg);
+}
+.icon-edit {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-image: url(../../Assets/img/edit.svg);
+  @extend %transition;
+}
+.icon-map {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/map-pin.svg);
+  margin-right: 5px;
+
+}
+.icon-case {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/briefcase.svg);
+  margin-right: 5px;
+
+}
+.icon-calendar {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/calendar.svg);
+  margin-right: 5px;
+}
+.icon-calendar {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/calendar.svg);
+  margin-right: 5px;
+}
+.icon-mail {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/mail.svg);
+  margin-right: 5px;
+}
+.icon-heart {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/heart.svg);
+  margin-right: 5px;
+}
+.icon-camera {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/camera.svg);
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.icon-user {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/user-check.svg);
+  vertical-align: bottom;
+}
+.icon-message-light {
+  width: 15px;
+  height: 15px;
+  background-image: url(../../Assets/img/message-light.svg);
+  vertical-align: bottom;
+}

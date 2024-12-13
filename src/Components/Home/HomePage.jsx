@@ -1,9 +1,22 @@
+import FrameAbout from "./FrameAbout"
+import FrameFriends from "./FrameFriends"
+import FrameMain from "./FrameMain"
+import FramePosts from "./FramePosts"
 
 const HomePage = () => {
   return (
-    <section className="home">
+    <section className="main">
       <div className="wrapper">
-        <h1>Домашняя страница</h1>
+        <div className="container layout-2-columns">
+          <div className="layout-1-columns">
+            <FrameMain />
+            <FramePosts />
+          </div>
+          <div className="layout-1-columns">
+            <FrameAbout />
+            <FrameFriends />
+          </div>
+        </div>
       </div>
     </section>
   )

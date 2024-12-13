@@ -1,0 +1,54 @@
+.header__information {
+  min-width: 230px;
+  overflow: hidden;
+  width: auto;
+  white-space: nowrap;
+  height: 300px;
+  background-color: $color-background-window;
+  box-shadow: 0 20px 30px #53585d1a, 0 0 30px #53585d33;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  border-radius: 10px;
+  z-index: 10;
+  padding: 16px;
+}
+
+.pop-up__login-info {
+  display: flex;
+
+  img {
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.login-data__name {
+  padding: 5px 20px;
+  font-size: 1.4;
+  font-weight: 600;
+}
+
+.login-data__login {
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 0 20px;
+  opacity: 0.7;
+}
+
+.pop-up__link {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pop-up__button-text {
+  padding-left: 10px;
+}
+
+.pop-up_login {
+  padding: 20px 0;
+}

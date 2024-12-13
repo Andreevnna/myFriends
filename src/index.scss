@@ -1,13 +1,31 @@
-
-@import './Sass/base/base';
-@import './Sass/base/formControls';
-@import './Sass/component/header';
-@import './Sass/component/user';
-@import './Sass/component/profile';
-
-@import './Sass/layouts/wrapper';
 @import './Sass/abstract/placeholders';
 @import './Sass/abstract/constant';
+
+@import './Sass/base/normalize';
+@import './Sass/base/base';
+@import './Sass/base/form-controls';
+@import './Sass/base/nav-link';
+@import './Sass/base/header-logo';
+@import './Sass/base/pop-up-login';
+@import './Sass/base/icon';
+@import './Sass/base/logo';
+@import './Sass/base/button';
+@import './Sass/base/accent';
+
+@import './Sass/font/font-face';
+
+@import './Sass/component/header';
+@import './Sass/component/profile';
+@import './Sass/component/window-about';
+@import './Sass/component/window-friends';
+@import './Sass/component/window-main';
+@import './Sass/component/window-post';
+@import './Sass/component/window';
+
+@import './Sass/layouts/wrapper';
+@import './Sass/layouts/layouts';
+
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:wght@100..900&display=swap');

@@ -1,0 +1,25 @@
+.nav-link {
+  display: flex;
+  li {
+    a {
+      color: $color-dark;
+      font-weight: 600;
+      opacity: 0.5;
+      padding: 12px;
+      font-size: 1.6rem;
+      display: block;
+
+      &:hover {
+        color: $color-link;
+        opacity: 1;
+      }
+    }
+  }
+}
+.nav-link__menu {
+  li {
+    &:last-child {
+      padding-left: 24px;
+    }
+  }
+}

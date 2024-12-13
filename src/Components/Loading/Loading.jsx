@@ -1,4 +1,4 @@
-import loadingImg from '../../assets/img/fade-stagger-squares.svg'
+import loadingImg from '../../Assets/img/fade-stagger-squares.svg'
 
 let Loading = () => {
   return (

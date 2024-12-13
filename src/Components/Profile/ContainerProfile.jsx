@@ -1,5 +1,5 @@
 import Profile from "./Profile";
-import React from "react";
+import React from "react"; 
 import { connect } from "react-redux";
 import { getPortfolioThunk, getStatusThunk, updateStatusThunk } from "../../Redux/profileReducer";
 import { Navigate, useParams } from "react-router-dom";
